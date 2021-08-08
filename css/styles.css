@@ -1,0 +1,25 @@
+
+
+*{
+    margin: 0 auto;
+    max-width: 987px;
+    box-sizing: border-box;
+}
+
+input{
+    margin: 30px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid grey;
+    outline: none;
+}
+
+.thumbnail{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+}
