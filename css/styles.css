@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0 auto;
     max-width: 987px;
@@ -20,9 +19,17 @@ input{
     outline: none;
 }
 
-.thumbnail{
+.gallery{
     max-width: 850px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 15px;
+}
+
+.gallery img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
 }
