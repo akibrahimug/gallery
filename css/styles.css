@@ -1,15 +1,17 @@
 
 *{
     margin: 0 auto;
-    max-width: 987px;
     box-sizing: border-box;
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+}
+
 input{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 40px;
     padding: 5px;
     max-width: 700px;
