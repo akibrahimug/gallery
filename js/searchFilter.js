@@ -1,19 +1,17 @@
+
 const search = document.querySelector('#search');
-const photoTexts = document.querySelectorAll('.gallery data-caption');
+const photoTexts = document.querySelectorAll('[data-caption]');
 
-const handlesearch = event => {
+const searchBar = event => {
     const searchTerm = event.target.value.toLowerCase();
-
-    photoTexts.forEach(photoText => {
-        const text = photoText.textContent.toLowerCase();
-        const photo = photoText.parentElement;
-
-        if(text.includes(searchTerm)){
-            photo.style.display = "block";
-        } else{
-            photo.style.display = "none"
+    photoTexts.forEach(photoTexts => {
+        const text = photoTexts.getAttribute('data-caption').toLowerCase();
+        if(text.includes(searchTerm)) {
+            photoTexts.style.display = "block";
+        } else {
+            photoTexts.style.display = "none";
         }
-    })
+    });
 }
 
-search.addEventListener('keyup', handlesearch)
+search.addEventListener('keyup', searchBar);
